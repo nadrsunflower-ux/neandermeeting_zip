@@ -87,19 +87,21 @@ function slides(open: OpenImage): { title: string; node: ReactNode }[] {
       title: "1-1) B2B 프로젝트 정리",
       node: (
         <Frame section="1. 진행된 업무" index="1-1)" title="B2B 프로젝트 정리">
-          <div className="grid h-full grid-cols-[1fr_600px] gap-[64px]">
+          <div className="grid h-full grid-cols-[1fr_540px] gap-[56px]">
             <div className="flex flex-col gap-[40px]">
-              <p className={body}>- 노션 2026 B2B PROJECT 에 각각의 프로젝트들 자료, 견적 등 수집되는대로 정리</p>
+              <p className={`${body} whitespace-nowrap`}>
+                - 노션 2026 B2B PROJECT 에 각각의 프로젝트들 자료, 견적 등 수집되는대로 정리
+              </p>
               <Card className="border-[#F2C14E]/40 bg-[#F2C14E]/[0.07]">
                 <p className="text-[30px] font-bold" style={{ color: GOLD }}>
-                  &lt;주의사항
+                  주의사항
                 </p>
                 <ol className="mt-[20px] flex flex-col gap-[20px] text-[28px] leading-[1.6] text-white/85">
                   <li>
                     1) 변경사항이나 추가사항이 있다면 해당 노션 페이지에 정리 부탁드립니다. 차후 다음 프로젝트를 하거나
                     아카이빙을 할 때 잘못된 정보가 기재되거나 제대로 된 정보를 수집하지 못 할 수도 있습니다
                   </li>
-                  <li>2) 추가로 수주된 B2B 프로젝트가 있다면 꼭 추가해주세요 &gt;</li>
+                  <li>2) 추가로 수주된 B2B 프로젝트가 있다면 꼭 추가해주세요</li>
                 </ol>
               </Card>
             </div>
@@ -130,70 +132,67 @@ function slides(open: OpenImage): { title: string; node: ReactNode }[] {
       ),
     },
     {
-      title: "1-3) 유료 인플루언서 협업 진행 — 배경",
+      title: "1-3) 유료 인플루언서 협업 진행",
       node: (
         <Frame section="1. 진행된 업무" index="1-3)" title="유료 인플루언서 협업 진행">
-          <div className="flex h-full flex-col justify-center gap-[48px]">
-            <p className="text-[30px] font-bold" style={{ color: GOLD }}>
-              배경
-            </p>
-            <p className="max-w-[1500px] text-[44px] font-medium leading-[1.6] tracking-[-0.01em]">
-              무료 인플루언서들만 부르다 보니 가성비가 좋지만, 대박 하나를 노리기 위해 하나하나 인플루언서 리스트업을 하고
-              터지기를 기대하는데에서 효율이 낮다고 느껴,{" "}
-              <span style={{ color: GOLD }}>9월 추석(9.24~9.27)</span>을 앞두고 더 많은 바이럴을 하기 위해 다음과 같이
-              인플루언서와의 협업을 체결하였습니다.
-            </p>
-          </div>
-        </Frame>
-      ),
-    },
-    {
-      title: "1-3) 유료 인플루언서 협업 진행 — 협업 인플루언서",
-      node: (
-        <Frame section="1. 진행된 업무" index="1-3)" title="유료 인플루언서 협업 진행">
-          <div className="grid h-full grid-cols-2 gap-[48px]">
-            <Card className="flex flex-col gap-[28px]">
-              <div>
-                <p className="text-[26px] text-white/50">[1]</p>
-                <p className="mt-[6px] text-[48px] font-bold">
-                  중은이 <span className="text-[32px] font-medium text-white/60">( @ju.eu.ni_170 / 1.7만 )</span>
-                </p>
-                <p className="mt-[8px] text-[30px]" style={{ color: GOLD }}>
-                  = 오타쿠 &amp; 패션 관련 인플루언서
-                </p>
-              </div>
-              <ul className="flex flex-col gap-[10px] text-[30px] leading-[1.5] text-white/85 tabular-nums">
-                <li>- 9월 21일 (월) 오후 2시 악센트 아이디 방문 촬영</li>
-                <li>- 9월 27일 (일) 오후 5시 최종본 업로드</li>
-              </ul>
-              <p className="rounded-[14px] bg-white/[0.06] px-[24px] py-[16px] text-[30px]">
-                * 후킹 문구 : <b>홍대에 새로운 덕질 잼컨 발견</b>
+          <div className="flex h-full flex-col gap-[32px]">
+            <div className="flex gap-[36px] border-l-[6px] border-[#F2C14E] pl-[36px]">
+              <p className="shrink-0 text-[28px] font-bold leading-[1.6]" style={{ color: GOLD }}>
+                배경
               </p>
-              <div className="text-[28px] leading-[1.5] text-white/75">
-                <p className="font-bold text-white/90">특징</p>
-                <p>- 해당 최종본은 META 광고로도 집행 가능</p>
-              </div>
-            </Card>
-            <Card className="flex flex-col gap-[28px]">
-              <div>
-                <p className="text-[26px] text-white/50">[2]</p>
-                <p className="mt-[6px] text-[48px] font-bold">
-                  제로주 <span className="text-[32px] font-medium text-white/60">( @zero__zoo / 3.5만)</span>
+              <p className="text-[28px] leading-[1.6] text-white/85">
+                무료 인플루언서들만 부르다 보니 가성비가 좋지만, 대박 하나를 노리기 위해 하나하나 인플루언서 리스트업을
+                하고 터지기를 기대하는데에서 효율이 낮다고 느껴,{" "}
+                <span className="font-semibold" style={{ color: GOLD }}>
+                  9월 추석(9.24~9.27)
+                </span>
+                을 앞두고 더 많은 바이럴을 하기 위해 다음과 같이 인플루언서와의 협업을 체결하였습니다.
+              </p>
+            </div>
+            <div className="grid min-h-0 flex-1 grid-cols-2 gap-[40px]">
+              <Card className="flex flex-col gap-[20px] !p-[36px]">
+                <div>
+                  <p className="text-[40px] font-bold">
+                    <span className="mr-[12px] text-[26px] font-medium text-white/50">[1]</span>
+                    중은이 <span className="text-[28px] font-medium text-white/60">( @ju.eu.ni_170 / 1.7만 )</span>
+                  </p>
+                  <p className="mt-[4px] text-[27px]" style={{ color: GOLD }}>
+                    = 오타쿠 &amp; 패션 관련 인플루언서
+                  </p>
+                </div>
+                <ul className="flex flex-col gap-[4px] text-[27px] leading-[1.5] text-white/85 tabular-nums">
+                  <li>- 9월 21일 (월) 오후 2시 악센트 아이디 방문 촬영</li>
+                  <li>- 9월 27일 (일) 오후 5시 최종본 업로드</li>
+                </ul>
+                <p className="rounded-[14px] bg-white/[0.06] px-[22px] py-[12px] text-[27px]">
+                  * 후킹 문구 : <b>홍대에 새로운 덕질 잼컨 발견</b>
                 </p>
-                <p className="mt-[8px] text-[30px]" style={{ color: GOLD }}>
-                  = 오타쿠 &amp; 코스프레 인플루언서
-                </p>
-              </div>
-              <ul className="flex flex-col gap-[10px] text-[30px] leading-[1.5] text-white/85 tabular-nums">
-                <li>- 9월 17일 (목) 오후 5시 악센트 아이디 방문 촬영</li>
-                <li>- 9월 25일 (금) 영상 업로드</li>
-              </ul>
-              <div className="text-[28px] leading-[1.5] text-white/75">
-                <p className="font-bold text-white/90">특징</p>
-                <p>- 틱톡, 유튜브에도 업로드</p>
-                <p>- &apos;테루하시 코코미&apos; 코스프레하고 방문 예정</p>
-              </div>
-            </Card>
+                <div className="text-[26px] leading-[1.5] text-white/75">
+                  <p className="font-bold text-white/90">특징</p>
+                  <p>- 해당 최종본은 META 광고로도 집행 가능</p>
+                </div>
+              </Card>
+              <Card className="flex flex-col gap-[20px] !p-[36px]">
+                <div>
+                  <p className="text-[40px] font-bold">
+                    <span className="mr-[12px] text-[26px] font-medium text-white/50">[2]</span>
+                    제로주 <span className="text-[28px] font-medium text-white/60">( @zero__zoo / 3.5만)</span>
+                  </p>
+                  <p className="mt-[4px] text-[27px]" style={{ color: GOLD }}>
+                    = 오타쿠 &amp; 코스프레 인플루언서
+                  </p>
+                </div>
+                <ul className="flex flex-col gap-[4px] text-[27px] leading-[1.5] text-white/85 tabular-nums">
+                  <li>- 9월 17일 (목) 오후 5시 악센트 아이디 방문 촬영</li>
+                  <li>- 9월 25일 (금) 영상 업로드</li>
+                </ul>
+                <div className="text-[26px] leading-[1.5] text-white/75">
+                  <p className="font-bold text-white/90">특징</p>
+                  <p>- 틱톡, 유튜브에도 업로드</p>
+                  <p>- &apos;테루하시 코코미&apos; 코스프레하고 방문 예정</p>
+                </div>
+              </Card>
+            </div>
           </div>
         </Frame>
       ),

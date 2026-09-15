@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "motion/react";
 
 const meetings = [
-  { slug: "2026-09-15", label: "9/15(화) 회의록", month: "2026.09", slides: 12 },
+  { slug: "2026-09-15", label: "9/15(화) 회의록", month: "2026.09", slides: 11 },
 ];
 
 export default function Home() {
